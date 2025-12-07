@@ -301,14 +301,48 @@
 </section>
 
 
-<!-- Teaser image-->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="hero-body">      
-      <img src="static/images/TeaserImage.png" alt="Left: Qualitative results of the camera-pose-aware texture generation experiment on three different 3D mesh objects (female head, dragon, and male head). Our method produces textures with more aesthetic patterns that are more realistic and align more closely with the mesh’s semantic parts. Middle: Qualitative results for the symmetry‑aware experiment on a 3D balloon mesh. For each viewpoint, we present the rendered mesh with a vertical dashed line indicating the symmetry axis. Compared to InTeX, TEXTure, Text2Tex, and Paint3D, our method produces textures that exhibit consistent patterns across symmetric regions of the mesh, confirming the reward’s ability to enforce symmetry. In contrast, without symmetry supervision, the textures on opposite sides often diverge significantly. Right: Qualitative results of the texture features emphasis experiment on a rabbit (bunny) object. We show the rendered 3D bunny from multiple viewpoints. Our method enhances texture features, such as edges and mortar, in proportion to mean curvature, a capability that all four baselines lack, often resulting in pattern-less (white) areas, particularly on the back and head of the rabbit." class="blend-img-background center-image">
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/CamPoseAware.jpg" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Camera-Pose-Aware Reward
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Symmetry.jpg" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Symmetry-Aware Texture Generation Reward
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/MinTexGeoAlign.jpg" alt="Third research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         Geometry-Texture Alignment Reward
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/TexFeatEmph.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <h2 class="subtitle has-text-centered">
+        Texture-Features Emphasis Reward
+      </h2>
     </div>
   </div>
+</div>
+</div>
 </section>
+<!-- End image carousel -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -362,47 +396,6 @@
   </div>
 </section>
     
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/CamPoseAware.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          Camera-Pose-Aware Reward
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Symmetry.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Symmetry-Aware Texture Generation Reward
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/MinTexGeoAlign.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Geometry-Texture Alignment Reward
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/TexFeatEmph.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Texture-Features Emphasis Reward
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
 
 <!-- Video carousel -->
 <section class="hero is-small">

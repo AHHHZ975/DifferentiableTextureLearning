@@ -312,13 +312,19 @@
         <img src="static/images/CamPoseAware.jpg" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          1- Camera-Pose-Aware Reward: Qualitative results of the camera-pose-aware texture generation experiment for different 
-          text prompts on different 3D mesh objects. The objective of this experiment is to learn optimal camera viewpoints such that,
-          when the object is rendered and textured from these views, the resulting texture maximizes the average aesthetic reward. 
-          Consequently, by maximizing this reward, the model becomes invariant to the initial camera positions: regardless of where
-          the cameras start, the training will adjust their azimuth and elevation to surround the 3D object in a way that yields high‑quality,
-          aesthetically pleasing textures.
+          1- Camera-Pose-Aware Reward: 
         </h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Qualitative results of the camera-pose-aware texture generation experiment for different 
+            text prompts on different 3D mesh objects. The objective of this experiment is to learn optimal camera viewpoints such that,
+            when the object is rendered and textured from these views, the resulting texture maximizes the average aesthetic reward. 
+            Consequently, by maximizing this reward, the model becomes invariant to the initial camera positions: regardless of where
+            the cameras start, the training will adjust their azimuth and elevation to surround the 3D object in a way that yields high‑quality,
+            aesthetically pleasing textures.
+          </p>
+        </div>
       </div>
       <div class="item">
         <!-- Your image here -->
@@ -343,6 +349,7 @@
          after fine-tuning with the geometry-texture alignment reward. This behavior arises from the differentiable sampling strategy used during reward computation. Specifically, 
          it encourages the model to place edge features at specific UV coordinates which ultimately results in structured and repeated patterns in the texture.
        </h2>
+
      </div>
      <div class="item">
       <!-- Your image here -->

@@ -314,8 +314,7 @@
         <h2 class="subtitle has-text-centered">
           1- Camera-Pose-Aware Reward: 
         </h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
+        <div class="content has-text-justified">          
           <p>
             Qualitative results of the camera-pose-aware texture generation experiment for different 
             text prompts on different 3D mesh objects. The objective of this experiment is to learn optimal camera viewpoints such that,
@@ -330,37 +329,51 @@
         <!-- Your image here -->
         <img src="static/images/Symmetry.jpg" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          2- Symmetry-Aware Texture Generation Reward: Qualitative results of symmetry-aware texture generation experiment on a balloon mesh object.
-          For each rwo (after and before fine-tuning), we show the rendered 3D object from multiple viewpoints, alongside the corresponding texture images
-          (rightmost column), which highlight the symmetric regions. A vertical dashed line marks the symmetry axis in each texture image. 
-          The purple plane passing through the center of the balloon in each viewpoint indicates the estimated symmetry plane of the object. 
-          As shown, compared to the pre-trained model, our method generates textures that are more consistent across symmetric parts of the mesh. 
-          Without symmetry supervision, patterns often differ noticeably between sides. In contrast, textures trained with the proposed symmetry reward 
-          exhibit visually coherent features across symmetric regions, demonstrating the reward’s effectiveness in enforcing symmetry consistency.
+          2- Symmetry-Aware Texture Generation Reward:
         </h2>
+        <div class="content has-text-justified">          
+          <p>
+            Qualitative results of symmetry-aware texture generation experiment on a balloon mesh object.
+            For each rwo (after and before fine-tuning), we show the rendered 3D object from multiple viewpoints, alongside the corresponding texture images
+            (rightmost column), which highlight the symmetric regions. A vertical dashed line marks the symmetry axis in each texture image. 
+            The purple plane passing through the center of the balloon in each viewpoint indicates the estimated symmetry plane of the object. 
+            As shown, compared to the pre-trained model, our method generates textures that are more consistent across symmetric parts of the mesh. 
+            Without symmetry supervision, patterns often differ noticeably between sides. In contrast, textures trained with the proposed symmetry reward 
+            exhibit visually coherent features across symmetric regions, demonstrating the reward’s effectiveness in enforcing symmetry consistency.
+          </p>
+        </div>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/MinTexGeoAlign.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         3- Geometry-Texture Alignment Reward: Qualitative results of the geometry-texture alignment experiment on a rabbit (bunny) mesh. For each row (before and after fine-tuning),
-         we show the rendered 3D object from multiple viewpoints, with the corresponding texture image in the rightmost column. As shown, our method produces textures whose patterns 
-         align more closely with the mesh’s curvature directions, unlike the pre-trained model. Moreover, a notable outcome in our results is the emergence of repetitive texture patterns
-         after fine-tuning with the geometry-texture alignment reward. This behavior arises from the differentiable sampling strategy used during reward computation. Specifically, 
-         it encourages the model to place edge features at specific UV coordinates which ultimately results in structured and repeated patterns in the texture.
+         3- Geometry-Texture Alignment Reward:
        </h2>
-
+       <div class="content has-text-justified">          
+          <p>
+            Qualitative results of the geometry-texture alignment experiment on a rabbit (bunny) mesh. For each row (before and after fine-tuning),
+            we show the rendered 3D object from multiple viewpoints, with the corresponding texture image in the rightmost column. As shown, our method produces textures whose patterns 
+            align more closely with the mesh’s curvature directions, unlike the pre-trained model. Moreover, a notable outcome in our results is the emergence of repetitive texture patterns
+            after fine-tuning with the geometry-texture alignment reward. This behavior arises from the differentiable sampling strategy used during reward computation. Specifically, 
+            it encourages the model to place edge features at specific UV coordinates which ultimately results in structured and repeated patterns in the texture.
+          </p>
+        </div>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/TexFeatEmph.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        4- Texture-Features Emphasis Reward: Qualitative results of the texture features emphasis experiment on a rabbit (bunny) object. For each row (before and after fine-tuning),
-        we show the rendered 3D object from multiple viewpoints, with the corresponding texture image in the rightmost column. The goal of this experiment is to learn texture images 
-        with salient features (e.g., edges) emphasized at regions of high surface bending, represented by the magnitude of mean curvature. This encourages texture patterns that highlight
-        3D surface structure while preserving perceptual richness through color variation. As illustrated, our method enhances texture features, such as edges and mortar, in proportion to
-        local curvature, a capability the pre-trained model lacks, often resulting in pattern-less (white) areas, particularly on the back and head of the rabbit.
+        4- Texture-Features Emphasis Reward:
       </h2>
+      <div class="content has-text-justified">          
+          <p>
+            Qualitative results of the texture features emphasis experiment on a rabbit (bunny) object. For each row (before and after fine-tuning),
+            we show the rendered 3D object from multiple viewpoints, with the corresponding texture image in the rightmost column. The goal of this experiment is to learn texture images 
+            with salient features (e.g., edges) emphasized at regions of high surface bending, represented by the magnitude of mean curvature. This encourages texture patterns that highlight
+            3D surface structure while preserving perceptual richness through color variation. As illustrated, our method enhances texture features, such as edges and mortar, in proportion to
+            local curvature, a capability the pre-trained model lacks, often resulting in pattern-less (white) areas, particularly on the back and head of the rabbit.
+          </p>
+        </div>
     </div>
   </div>
 </div>
